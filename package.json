@@ -1,6 +1,6 @@
 {
   "name": "webpack-module-flavour-plugin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Webpack plugin that can at build time pick one of multiple versions of some module",
   "main": "index.js",
   "scripts": {
