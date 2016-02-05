@@ -1,0 +1,16 @@
+{
+  "name": "webpack-module-flavour-plugin",
+  "version": "0.0.0",
+  "description": "Webpack plugin that can at build time pick one of multiple versions of some module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.5.1"
+  }
+}
