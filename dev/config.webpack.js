@@ -11,22 +11,26 @@ var basicConfig = {
     module: {
         loaders: [
             {test: /\.styl/, loaders: [
-                'style',
-                'css',
-                'stylus'
+                'style-loader',
+                'css-loader',
+                'stylus-loader'
             ]}
         ]
     },
-    plugins: [
-        new ModuleFlavourPlugin()
-    ]
 };
 
 var ConfA = Object.assign({}, basicConfig, {
-    flavour: 'mobile'
+  plugins : [
+    new ModuleFlavourPlugin({
+      flavour: 'mobile'
+    })
+  ]
 });
 var ConfB = Object.assign({}, basicConfig, {
-    flavour: 'desktop'
+  plugins : [
+    new ModuleFlavourPlugin({
+      flavour: 'desktop'
+    })
+  ]
 });
-
 module.exports = [ConfA, ConfB];
